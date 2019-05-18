@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Tarot login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.php">Home</a>
+			</div>
+			<a href="login.html">登入</a> /
+			<a href="enroll.html">註冊</a>
+			<a href="#menu" class="toggle"><span>Menu</span></a>
+		</header>
+
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.php">首頁</a></li>
+				<li><a href="check.php">遊戲開始</a></li>
+				<li><a href="re_check.php">相關商品推薦</a></li>
+			</ul>
+		</nav>
+
+		<section id="banner" data-video="images/background">
+			<div class="inner">
+				<h2><font size="10" color="white">我要登入</font></h2>
+				<form action="login.php" method="post">
+					<p>
+					請輸入帳號：<input type="text" name="userID"><br/>
+					請輸入密碼：<input type="password" name="userPASS"><br/>
+					<input value="sign in" class="button" type="submit"><br/>
+					還沒有帳號嗎？立即<a href="enroll.html">註冊</a>
+                			</p>
+                		</form>
+				
+				
+			</div>
+		</section>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>

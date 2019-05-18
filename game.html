@@ -1,0 +1,111 @@
+<html>	
+<head>
+	<title>tarot game start</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/game.css" />
+	<link rel="stylesheet" type="text/css" href="css/wickedcss.min.css">
+	
+</head>
+<body class="subpage">
+
+		<header id="header" class="">
+			<div class="logo">
+				<a href="index.php">Home</a>
+			</div>
+			<a href="logout.php">登出</a> /
+			<a href="member.php">會員專區</a>
+			<a href="#menu" class="toggle"><span>Menu</span></a>
+		</header>
+
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.php">首頁</a></li>
+				<li><a href="check.php">遊戲開始</a></li>
+				<li><a href="re_check.php">相關商品推薦</a></li>
+			</ul>
+		</nav>
+
+		<section id="one" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="image fit">
+						<img src="images/gamebg.jpg" alt="" />
+					</div>
+					<div class="content">
+						<header class="align-center">
+							<h2>遊戲開始</h2>
+						</header>
+						<hr />
+						<font color="black" size='4'>
+						<form action="game.php" method="POST">
+						<div class="category">
+						請選擇諮詢類別：
+							<input type="radio" name="category" value="愛情" id="love"><label for="love">愛情</label>
+							<input type="radio" name="category" value="工作" id="work"><label for="work">工作</label>
+							<input type="radio" name="category" value="課業" id="school"><label for="school">課業</label>
+							<input type="radio" name="category" value="健康" id="health"><label for="health">健康</label>
+							<input type="radio" name="category" value="人際" id="friend"><label for="friend">人際</label>
+							<br/>
+							
+						</div>
+
+						<div class="desk" style="display: none;">
+						請於心中默想問題並從下面抽選最有感應的一張卡片<br/>
+							<div id="c1" class="card" style="left: 10%; z-index: 1; background-image: url(images/cardback.jpg);"></div>
+							<div id="c2" class="card" style="left: 13%; z-index: 2;background-image: url(images/cardback.jpg);"></div>
+							<div id="c3" class="card" style="left: 16%; z-index: 3;background-image: url(images/cardback.jpg);"></div>
+							<div id="c4" class="card" style="left: 19%; z-index: 4;background-image: url(images/cardback.jpg);"></div>
+							<div id="c5" class="card" style="left: 22%; z-index: 5;background-image: url(images/cardback.jpg);"></div>
+							<div id="c6" class="card" style="left: 25%; z-index: 6;background-image: url(images/cardback.jpg);"></div>
+							<div id="c7" class="card" style="left: 28%; z-index: 7;background-image: url(images/cardback.jpg);"></div>
+							<div id="c8" class="card" style="left: 31%; z-index: 8;background-image: url(images/cardback.jpg);"></div>
+							<div id="c9" class="card" style="Left: 34%; z-index: 9;background-image: url(images/cardback.jpg);"></div>
+							<div id="c10" class="card" style="left: 37%; z-index: 10;background-image: url(images/cardback.jpg);"></div>
+							<div id="c11" class="card" style="left: 40%; z-index: 11;background-image: url(images/cardback.jpg);"></div>
+							<div id="c12" class="card" style="left: 43%; z-index: 12;background-image: url(images/cardback.jpg);"></div>
+							<div id="c13" class="card" style="left: 46%; z-index: 13;background-image: url(images/cardback.jpg);"></div>
+							<div id="c14" class="card" style="left: 49%; z-index: 14;background-image: url(images/cardback.jpg);"></div>
+							<div id="c15" class="card" style="left: 52%; z-index: 15;background-image: url(images/cardback.jpg);"></div>
+							<div id="c16" class="card" style="left: 55%; z-index: 16;background-image: url(images/cardback.jpg);"></div>
+							<div id="c17" class="card" style="left: 58%; z-index: 17;background-image: url(images/cardback.jpg);"></div>
+							<div id="c18" class="card" style="left: 61%; z-index: 18;background-image: url(images/cardback.jpg);"></div>
+							<div id="c19" class="card" style="left: 64%; z-index: 19;background-image: url(images/cardback.jpg);"></div>
+							<div id="c20" class="card" style="left: 67%; z-index: 20;background-image: url(images/cardback.jpg);"></div>
+							<div id="c21" class="card" style="left: 70%; z-index: 21;background-image: url(images/cardback.jpg);"></div>
+							<div id="c22" class="card" style="left: 73%; z-index: 22;background-image: url(images/cardback.jpg);"></div>
+						</div>
+							
+						<div class="choice" style="display: none;">
+						您選擇的卡牌為：						
+						<div id="c0" class="card" style="left: 15%; background-image: url(images/cardback.jpg);"></div>
+
+						<input type="submit" value="決定！">
+						<input type="reset" value="重選…">
+						</div>
+
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							
+						</form>
+						</font>
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/game.js"></script>
+	</body>
+</html>
