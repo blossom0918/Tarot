@@ -1,0 +1,31 @@
+* {margin: 0; padding: 0;}
+      
+body {
+  background: #00a651;
+}
+
+.card {
+  position: absolute;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: url('images/cardback.jpg');
+  background-size: cover;
+  border-color: black;
+  border-style:outset;
+  border-width:2px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+}
+
+.card p {
+  text-align: center;
+  font: 100px/220px Georgia, Times New Roman, serif;
+}
+
+.card:hover{
+  background: blue;
+}
