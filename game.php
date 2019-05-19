@@ -48,9 +48,9 @@ if(isset($_SESSION["login"])){
 	date_default_timezone_set('Asia/Taipei');
 
 	echo '<div class="content">
-			<header class="align-center">
-				<h2>塔羅解析</h2>
-			</header>
+		<header class="align-center">
+			<h2>塔羅解析</h2>
+		</header>
 		<hr />
 		<font color="black" size="4">';
 		$cardnum=rand(0,21);
