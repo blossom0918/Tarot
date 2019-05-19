@@ -8,9 +8,9 @@
 	<body class="subpage">
 
 		<header id="header">
-		<div class="logo">
-                	<a href="index.php">Home</a>
-            	</div>
+			<div class="logo">
+				<a href="index.php">Home</a>
+			</div>
 <?php
 session_start();
 			
