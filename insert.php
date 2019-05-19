@@ -18,7 +18,7 @@
 		
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+               			<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -29,7 +29,7 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-            				<h2>新增相關商品</h2>
+            						<h2>新增相關商品</h2>
 						</header>
                         <hr/>
 
