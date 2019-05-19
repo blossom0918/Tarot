@@ -29,7 +29,7 @@ if(isset($_SESSION["login"])){
 
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
