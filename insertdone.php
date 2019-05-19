@@ -14,7 +14,7 @@
 		unlink($tmp);
 	}
 
-	$name=$_POST['name'];
+    $name=$_POST['name'];
     $author=$_POST['author'];
     $publisher=$_POST['publisher'];
     $translator=$_POST['translator'];
@@ -24,10 +24,10 @@
 
     echo "<a href='insert.php' class='button special big'>新增資料</a><br/>";
 
-	if($name!=null && $content!=null){
-        $sql2="INSERT INTO recommend(recommend_name,author,publisher,translator,title,content,url,photo_name) VALUES('$name','$author','$publisher','$translator','$title','$content','$url','$fname')";
-		$insert=mysqli_query($link,$sql2);
-	}
+    if($name!=null && $content!=null){
+    	$sql2="INSERT INTO recommend(recommend_name,author,publisher,translator,title,content,url,photo_name) VALUES('$name','$author','$publisher','$translator','$title','$content','$url','$fname')";
+	$insert=mysqli_query($link,$sql2);
+    }
 	
 	header("Location:re_check.php");
 ?>
