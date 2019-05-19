@@ -41,7 +41,7 @@
 							  	'192.168.0.17',
 								'root',
 								'sea11223',
-							    'tarot');
+							    	'tarot');
 							mysqli_select_db($link,'tarot');
 							mysqli_query($link, 'SET NAMES utf8');
 
