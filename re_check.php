@@ -2,10 +2,10 @@
 session_start();
 	$userID=$_COOKIE["ID"];
 	$link=@mysqli_connect(
-	    '192.168.0.17',
+	    	'192.168.0.17',
 		'root',
 		'sea11223',
-	    'tarot');
+		'tarot');
 
 	mysqli_select_db($link,'tarot');
 	$sql="SELECT isAdmin FROM member WHERE name='$userID'";
