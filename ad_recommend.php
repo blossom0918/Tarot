@@ -6,11 +6,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="subpage">
-
 		<header id="header">
-			<div class="logo">
-                <a href="index.php">Home</a>
-            </div>
+		<div class="logo">
+                	<a href="index.php">Home</a>
+            	</div>
 <?php
 session_start();
 			
@@ -28,7 +27,7 @@ if(isset($_SESSION["login"])){
 
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -62,10 +61,10 @@ if(isset($_SESSION["login"])){
 	if (isset($_SESSION["login"]) && $row['isAdmin']==1) {
 		
 	$link2=@mysqli_connect(
-	    '192.168.0.17',
+		'192.168.0.17',
 		'root',
 		'sea11223',
-	    'tarot');
+	    	'tarot');
 	mysqli_select_db($link2,'tarot');
 	mysqli_query($link2, 'SET NAMES utf8');
 	$sql2="SELECT * FROM recommend";
@@ -92,18 +91,17 @@ if(isset($_SESSION["login"])){
 			echo "譯者：".$row2['translator']."<br>";
 		if ($row2['publisher']!=null)
 			echo "出版社：".$row2['publisher']."<br>";
-   		 echo $row2['title']."</b>";
+   		echo $row2['title']."</b>";
 		echo "
 			<p><font size='3.5'>
-          	<dd>
-				".$row2['content']."<br/><br/>
-            <ul class='actions'>
-		<li><a href='".$row2['url']."' class='button alt'><font color='gray'>前往購買</font></a></li>     	
-       	<li><a href='re_update.php?num=$num' class='button alt'><font color='gray'>修改</font></a></li>		
-		<li><a href='delete.php?num=$num' class='button alt'><font color='gray'>刪除</font></a></li>
-            </ul>
-            </dd>
-            </p>";	
+			<dd>".$row2['content']."<br/><br/>
+			    <ul class='actions'>
+				<li><a href='".$row2['url']."' class='button alt'><font color='gray'>前往購買</font></a></li>     	
+				<li><a href='re_update.php?num=$num' class='button alt'><font color='gray'>修改</font></a></li>		
+				<li><a href='delete.php?num=$num' class='button alt'><font color='gray'>刪除</font></a></li>
+			    </ul>
+			</dd>
+			</p>";	
 	}
 
 	mysqli_close($link2);	
