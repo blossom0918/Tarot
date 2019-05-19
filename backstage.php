@@ -9,7 +9,7 @@
 
 		<header id="header">
 			<div class="logo">
-                <a href="index.php">Home</a>
+                		<a href="index.php">Home</a>
 			</div>
 			<a href="logout.php">登出</a> /
 			<a href="member.php">會員專區</a>
@@ -18,7 +18,7 @@
 		
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -28,9 +28,9 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-            			    <h2>管理員專區</h2>
+            			    			<h2>管理員專區</h2>
 						</header>
-          				<hr/>
+          					<hr/>
 
 						<p>		
 						<font size="5" color="black">會員管理</font>
@@ -53,10 +53,10 @@
 					
 						<?php
 							$link=@mysqli_connect(
-							    '192.168.0.17',
+							    	'192.168.0.17',
 								'root',
 								'sea11223',
-							    'tarot');
+							    	'tarot');
 							mysqli_select_db($link,'tarot');
 							mysqli_query($link, 'SET NAMES utf8');
 
@@ -232,7 +232,7 @@
 	    data: {
 	        labels: <?php echo json_encode($arr1); ?>,
 	        datasets: [{
-	        	label: '五種類別點擊率',
+		    label: '五種類別點擊率',
 	            backgroundColor: ["rgba(255, 159, 64, 0.4)","rgba(255, 205, 86, 0.4)","rgba(75, 192, 192, 0.4)","rgba(54, 162, 235, 0.4)","rgba(201, 203, 207, 0.4)"],
 	            borderColor:["rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(201, 203, 207)"],
 	            data: <?php echo json_encode($arr2); ?>,
@@ -240,9 +240,9 @@
 	    },
 	    options: {
 	    	scales:{
-				yAxes:[{
-					ticks:{
-						beginAtZero:true
+			yAxes:[{
+				ticks:{
+					beginAtZero:true
 					}
 				}]
 			}
@@ -304,7 +304,7 @@
 				},
 				{
 				label: "male",
-	            backgroundColor:"rgba(54, 162, 235, 0.2)",
+	            		backgroundColor:"rgba(54, 162, 235, 0.2)",
 				borderColor:"rgb(54, 162, 235)",
 				pointBackgroundColor:"rgb(54, 162, 235)",
 				pointBorderColor:"#fff",
