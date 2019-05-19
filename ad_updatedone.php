@@ -9,7 +9,7 @@
 
 		<header id="header">
 			<div class="logo">
-                <a href="index.php">Home</a>
+                		<a href="index.php">Home</a>
 			</div>
 			<a href="logout.php">登出</a> /
 			<a href="member.php">會員專區</a>
@@ -18,7 +18,7 @@
 		
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+               			<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -35,10 +35,10 @@
 	if ($isAdmin!=null){
 
 		$link=@mysqli_connect(
-		    '192.168.0.17',
+		    	'192.168.0.17',
 			'root',
 			'sea11223',
-		    'tarot');
+		    	'tarot');
 		mysqli_select_db($link,'tarot');
 		mysqli_query($link, 'SET NAMES utf8');
 
@@ -47,9 +47,9 @@
 
  		echo "
 			<header class='align-center'>
-           		<h2>管理員專區</h2>
-               		<p>恭喜 ".$userID." 的資料更新成功～</p>
-               		<p>三秒後為您轉跳回管理者後台～</p>
+				<h2>管理員專區</h2>
+				<p>恭喜 ".$userID." 的資料更新成功～</p>
+				<p>三秒後為您轉跳回管理者後台～</p>
 			</header>";
 		header("Refresh:3; url='backstage.php'");
     }
