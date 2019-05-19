@@ -9,7 +9,7 @@
 
 		<header id="header">
 			<div class="logo">
-                <a href="index.php">Home</a>
+                		<a href="index.php">Home</a>
 			</div>
 			<a href="logout.php">登出</a> /
 			<a href="member.php">會員專區</a>
@@ -18,7 +18,7 @@
 		
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -29,17 +29,18 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-                        <h2>會員專區</h2>
-                        <p>歡迎<?php echo $_COOKIE["ID"]?>，我們又見面了！<br/>
+							<h2>會員專區</h2>
+							<p>歡迎<?php echo $_COOKIE["ID"]?>，我們又見面了！<br/>
+						</header>	
 						<font size="4" color="black">
 						<?php
 							$userID=$_COOKIE["ID"];
 							    
 							$link=@mysqli_connect(
-							    '192.168.0.17',
+								'192.168.0.17',
 								'root',
 								'sea11223',
-							    'tarot');
+							    	'tarot');
 							mysqli_select_db($link,'tarot');
 							mysqli_query($link, 'SET NAMES utf8');
 
@@ -58,13 +59,13 @@
 							}
 							
 						?>
-                        </font>
-                        </p>
-                        <hr>
+						</font>
+						</p>
+						<hr>
 			
 						<font size="5" color="black">遊戲紀錄</font>
 						<br/>
-                        <p>
+                       				<p>
 						<font size="4" color="black">
 						<?php
 							$count=0;
@@ -104,9 +105,7 @@
 							mysqli_close($link);
 						?>
 						</font>
-                        </p>
-						<br>
-
+                        			</p>				
 					</div>
 				</div>
 			</div>
