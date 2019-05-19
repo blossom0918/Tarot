@@ -8,9 +8,9 @@
 	<body class="subpage">
 
 		<header id="header">
-			<div class="logo">
-                <a href="index.php">Home</a>
-            </div>
+		<div class="logo">
+                	<a href="index.php">Home</a>
+            	</div>
 <?php
 session_start();
 			
@@ -28,7 +28,7 @@ if(isset($_SESSION["login"])){
 
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -44,13 +44,13 @@ if(isset($_SESSION["login"])){
 					<header class="align-center">
 						<h2>相關商品推薦</h2>
 					</header>
-				<p>
+					<p>
 <?php				
 	$link=@mysqli_connect(
-	    '192.168.0.17',
+	    	'192.168.0.17',
 		'root',
 		'sea11223',
-	    'tarot');
+		'tarot');
 	mysqli_select_db($link,'tarot');
 	mysqli_query($link, 'SET NAMES utf8');
 	$sql="SELECT * FROM recommend";
@@ -71,19 +71,17 @@ if(isset($_SESSION["login"])){
 				echo "譯者：".$row['translator']."<br>";
 			if ($row['publisher']!=null)
 				echo "出版社：".$row['publisher']."<br>";
-           	echo $row['title']."</b>";
-			echo "
+           			echo $row['title']."</b>";
+				echo "
 					<p><font size='3.5'>
-                                    	<dd>
-						".$row['content']."<br/><br/>
-            		<ul class='actions'>
-                		<li><a href='".$row['url']."' class='button alt'><font color='gray'>前往購買</font></a></li>
-                                       		</ul>
-                               	    	</dd>
-                               		</p>";	
-				}
-
-				mysqli_close($link);		
+					<dd>".$row['content']."<br/><br/>
+					<ul class='actions'>
+						<li><a href='".$row['url']."' class='button alt'><font color='gray'>前往購買</font></a></li>
+					</ul>
+					</dd>
+					</p>";	
+		}
+		mysqli_close($link);		
 ?>
 				</p>
 
