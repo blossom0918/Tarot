@@ -9,7 +9,7 @@
 
 		<header id="header">
 			<div class="logo">
-					<a href="index.php">Home</a>
+				<a href="index.php">Home</a>
 			</div>
 			<a href="login.html">登入</a> /
 			<a href="enroll.html">註冊</a>
@@ -33,10 +33,10 @@
 						$userID=$_POST["userID"];
 						$userPASS=$_POST["userPASS"];
 						$link=@mysqli_connect(
-							    '192.168.0.17',
-								'root',
-								'sea11223',
-							    'tarot');
+							'192.168.0.17',
+							'root',
+							'sea11223',
+							'tarot');
 						mysqli_select_db($link,'tarot');
 
 						$sql="SELECT * FROM member";
