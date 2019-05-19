@@ -9,7 +9,7 @@
 
 		<header id="header">
 			<div class="logo">
-                <a href="index.php">Home</a>
+                		<a href="index.php">Home</a>
 			</div>
 			<a href="logout.php">登出</a> /
 			<a href="member.php">會員專區</a>
@@ -18,7 +18,7 @@
 		
 		<nav id="menu">
 			<ul class="links">
-                <li><a href="index.php">首頁</a></li>
+                		<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="re_check.php">相關商品推薦</a></li>
 			</ul>
@@ -29,18 +29,17 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-                            <h2>編輯相關商品</h2>
+                            				<h2>編輯相關商品</h2>
 						</header>
-                        <hr/>
-
+                        			<hr/>
 						<p>		
 <?php
     $num=$_GET['num'];
     $link=@mysqli_connect(
-	    '192.168.0.17',
-		'root',
-		'sea11223',
-	    'tarot');
+	'192.168.0.17',
+	'root',
+	'sea11223',
+	'tarot');
     mysqli_select_db($link,'tarot');
     mysqli_query($link,'SET NAMES utf8');
 
@@ -50,21 +49,20 @@
     $row=mysqli_fetch_assoc($result);
     echo "
         <img src='images/book/".$row['photo_name']."' alt='' />
-		<form action='re_updatedone.php' method='post' enctype='multipart/form-data'>
-		<input type='hidden' name='num' value='".$num."'>
-		<input type='file' name='file' value='更改圖片'><br/>
-        書名：<input type='text' name='name' value='".$row['recommend_name']."'><br/>
-        作者：<input type='text' name='author' value='".$row['author']."'><br/>
-        出版社：<input type='text' name='publisher' value='".$row['publisher']."'><br/>
-        譯者：<input type='text' name='translator' value='".$row['translator']."'><br/>
-        標題：<input type='text' name='title' value='".$row['title']."'><br/>
+	<form action='re_updatedone.php' method='post' enctype='multipart/form-data'>
+	<input type='hidden' name='num' value='".$num."'>
+	<input type='file' name='file' value='更改圖片'><br/>
+		書名：<input type='text' name='name' value='".$row['recommend_name']."'><br/>
+		作者：<input type='text' name='author' value='".$row['author']."'><br/>
+		出版社：<input type='text' name='publisher' value='".$row['publisher']."'><br/>
+		譯者：<input type='text' name='translator' value='".$row['translator']."'><br/>
+		標題：<input type='text' name='title' value='".$row['title']."'><br/>
 		內容：<input type='text' name='content' value='".$row['content']."'><br/>
 		網址：<input type='text' name='url' value='".$row['url']."'><br/>
         <input class='button special' type='submit' value='確定送出'><br/>
         </form>";
 ?>
-		                </p>
-
+		                		</p>
 					</div>
 				</div>
 			</div>
