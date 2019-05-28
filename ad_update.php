@@ -62,7 +62,7 @@
 		echo"管理員：
 		<input type='radio' name='isAdmin' value='1' id='1' checked='checked'><label for='1'>是</label>";
 		echo"<input type='radio' name='isAdmin' value='0' id='0'><label for='0'>否</label><br>";
-		echo"<input type='submit' value='確定' class='button'>";
+		echo"<input type='submit' value='確定' class='button' style='font-size:16px; font-family:微軟正黑體'>";
 	echo"</form>
 	</font>
 	</p>";
