@@ -92,7 +92,7 @@
 									<input type="radio" name="accuracy" value="high" id="high"><label for="high">高</label>
 									<input type="radio" name="accuracy" value="normal" id="normal"><label for="normal">普通</label>
 									<input type="radio" name="accuracy" value="low" id="low"><label for="low">低</label>
-									<input type="submit"></p>
+									<input type="submit" style="font-size:18px; font-family:微軟正黑體"></p>
 									</form>';
 								}
 								else{
