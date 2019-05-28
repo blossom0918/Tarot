@@ -60,7 +60,7 @@
 								<input type='radio' name='gender' value='male' id='male'><label for='male'>男性</label>
 								<input type='radio' name='gender' value='female' id='female'><label for='female'>女性</label><br/>";
 								echo"請重新輸入年齡：<input type='text' name='age' value='".$row['age']."'><br/>";
-								echo"<input type='submit' value='確定' class='button'>
+								echo"<input type='submit' value='確定' class='button' style='font-size:18px; font-family:微軟正黑體'>
 							</form>
 							</font>";
 							}else{
