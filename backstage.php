@@ -44,11 +44,11 @@
 							<input type="radio" name="gender" value="female" id="female"><label for="female">女性</label>
 							管理者：<input type="radio" name="admin" value="1" id="1"><label for="1">是</label>
 							<input type="radio" name="admin" value="0" id="0"><label for="0">否</label>
-							<input type="submit" name="submit" value="查詢">
+							<input type="submit" name="submit" value="查詢" style="font-size:18px; font-family:'微軟正黑體'">
 						</form>	
 						<form action="" method="get">
 							<input type="hidden" name="send" value="all">
-							<input type="submit" name="submit" value="全部查詢">
+							<input type="submit" name="submit" value="全部查詢" style="font-size:18px; font-family:'微軟正黑體'">
 						</form>		
 					
 						<?php
