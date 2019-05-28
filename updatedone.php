@@ -68,10 +68,10 @@
 								echo "密碼：".$row['password']."<br/>";
 								echo "性別：".$row['gender']."<br/>";
 								echo "年齡：".$row['age']."<br/>";
-								echo "<a href='update.php' class='button special scrolly'>編輯</a><br/>";
+								echo "<a href='update.php' class='button special scrolly' style='font-size:18px; font-family:微軟正黑體'>編輯</a><br/>";
 
 									if ($row['isAdmin']!=0) {
-										echo "<a href='backstage.php' class='button special'>進入管理者後台</a><br/>";
+										echo "<a href='backstage.php' class='button special' style='font-size:18px; font-family:微軟正黑體'>進入管理者後台</a><br/>";
 									}
 								
 								echo "
@@ -109,7 +109,7 @@
 										<input type="radio" name="accuracy" value="high" id="high"><label for="high">高</label>
 										<input type="radio" name="accuracy" value="normal" id="normal"><label for="normal">普通</label>
 										<input type="radio" name="accuracy" value="low" id="low"><label for="low">低</label>
-										<input type="submit"></p>
+										<input type="submit" style="font-size:18px; font-family:微軟正黑體"></p>
 										</form>';
 									}
 									else{
