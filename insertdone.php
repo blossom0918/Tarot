@@ -22,7 +22,7 @@
     $content=$_POST['content'];
     $url=$_POST['url'];
 
-    echo "<a href='insert.php' class='button special big'>新增資料</a><br/>";
+    echo "<a href='insert.php' class='button special big' style='font-size:18px; font-family:微軟正黑體'>新增資料</a><br/>";
 
     if($name!=null && $content!=null){
     	$sql2="INSERT INTO recommend(recommend_name,author,publisher,translator,title,content,url,photo_name) VALUES('$name','$author','$publisher','$translator','$title','$content','$url','$fname')";
