@@ -43,7 +43,7 @@
        				標題：<input type='text' name='title'><br/>
 				內容：<input type='text' name='content'><br/>
 				網址：<input type='text' name='url'><br/>
-       			<input class='button special' type='submit' value='確定送出'><br/>
+       			<input class='button special' type='submit' value='確定送出' style='font-size:18px; font-family:微軟正黑體'><br/>
     			</form>
 		    	</p>
 
