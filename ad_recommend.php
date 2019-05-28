@@ -70,7 +70,7 @@ if(isset($_SESSION["login"])){
 	$sql2="SELECT * FROM recommend";
 	$result2=mysqli_query($link2,$sql2);
 
-	echo "<a href='insert.php?' class='button special big'>新增資料</a>";
+	echo "<a href='insert.php?' class='button special big' style='font-size:18px; font-family:微軟正黑體'>新增資料</a>";
 				
 	while($row2=mysqli_fetch_assoc($result2)){	
 		echo "<hr>";
